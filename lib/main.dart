@@ -9,23 +9,66 @@ void main() {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      body: new Center(
-        child: new Container(
-          color: Color.fromARGB(255, 19, 79, 170),
-          width: 200.0,
-          height: 100.0,
-          child: new Center(
-            child: new Row(
-              children: [
-                new Text("Recipes Ten",
-                  style: new TextStyle(
-                      color: Colors.white, fontFamily: "Serif", fontSize: 20.0)),
-                new Icon( Icons.book, color: Colors.white, size: 70.0 )
-              ]
-            )
+    return Scaffold(
+        appBar: AppBar(
+            leading: const Icon(Icons.home),
+            title: const Center(child: Text("Recipes Ten")),
+            actions: const <Widget>[Icon(Icons.search)]),
+        body: Container(
+          child: Row(
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                      Container(
+                        width: 100.0,
+                        height: 150.0,
+                        color: Color.fromARGB(255, 172, 219, 241),
+                        child: Icon(Icons.local_pizza),
+                      ),
+                    ],
+                  )
+                  
+                ]
+              )
+              
+            ],
           ),
-        ),
-    ));
+        ));
   }
 }
